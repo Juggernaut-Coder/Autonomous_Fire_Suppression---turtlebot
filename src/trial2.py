@@ -8,9 +8,6 @@ from geometry_msgs.msg import Twist, Pose
 from nav_msgs.msg import Odometry
 from tf.transformations import euler_from_quaternion, quaternion_from_euler
 
-# Team 41
-# Author: Naim, Shanto, Taylor-Anne
-# B00# in order of the names from top: B00879532, B00779367, B00737060 
 
 class SquareMove(object):
     """
