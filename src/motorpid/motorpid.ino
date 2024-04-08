@@ -1,10 +1,3 @@
-/* Header
-Author: Vincent Sieben
-Date: April 9, 2020
-Purpose: Motor Control for ECED3901 robots
-*/
-// DO NOT USE TIMER 0, used for delay and ROS functions
-
 #include <ros.h>
 #include <geometry_msgs/Twist.h>
 #include <std_msgs/Int32.h>
@@ -114,10 +107,6 @@ ISR(TIMER1_OVF_vect)
      left_temp_ticks = 0;     
 }
 
-
-
-
-
 void setup()
 {
         MCU_init();
@@ -161,12 +150,6 @@ void loop()
         nh.spinOnce();
         delay(1);
 }
-
-
-
-
-
-
 
 //Function implementations --------------------------------------------------------------------------
 void MCU_init()
