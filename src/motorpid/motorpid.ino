@@ -1,3 +1,5 @@
+// Purpose: Motor Control for ECED3901 robots
+// DO NOT USE TIMER 0, used for delay and ROS functions
 #include <ros.h>
 #include <geometry_msgs/Twist.h>
 #include <std_msgs/Int32.h>
